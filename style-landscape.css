@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.img-box {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    opacity: 40%;
+}
+
+
+.descricao {
+     position: absolute;
+     top: 4%;
+     width: 280px;
+     color: #fff;
+     left: 10%;
+}
+
+
+.progresso-bar {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 80%;
+}
+
+
+.tempo {
+    position: relative;
+    color: #fff;
+    width: 280px;
+    font-size: 20px;
+    left: -23%;
+    top: 84vh;
+}
+
+.player {
+    position: absolute;
+    top: 50%;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}

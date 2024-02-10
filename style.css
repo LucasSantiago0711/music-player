@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( to right , #bfb74c , #091314);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.img-box {
+    width: 300px;
+    position: absolute;
+    top: 10%;
+}
+
+img {
+    width: 300px;
+}
+
+.descricao {
+   position: absolute;
+    top: 45%;
+    width: 280px;
+    color: #fff;
+}
+
+.descricao p {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.descricao i {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.progresso-bar {
+    width: 280px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 57%;
+}
+
+progress {
+    width: 0;
+}
+
+.ponto {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.tempo {
+    position: relative;
+    color: #fff;
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    font-size: 20px;
+    top: 59vh;
+}
+
+
+.player {
+    position: absolute;
+    top: 80%;
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-play , .botao-pause {
+    font-size: 50px;
+}
+
+.player .botao-pause {
+    display: none;
+}
+
+.botao-proxima , .botao-anterior {
+    font-size: 45px;
+}
+
+.alan-walker {
+    background: linear-gradient( to right , #bfb74c , #091314);
+}
+
+.cartoon {
+    background: linear-gradient( to right , #612caf , #08060b );
+}
+
+.spektrem {
+    background: linear-gradient( to right , #58161b , #090606 );
+}
+
+
+
+@media (max-width: 800px) {
+    .img-box {
+        width: 250px;
+        position: absolute;
+        top: 10%;
+    }
+    
+    img {
+        width: 250px;
+    }
+
+    .descricao {
+         width: 250px;
+         top: 49%;
+     }
+     
+     .progresso-bar {
+        width: 250px;
+        top: 63%;
+    }
+
+    .tempo {
+        width: 250px;
+        top: 65vh;
+    }
+    
+
+}
