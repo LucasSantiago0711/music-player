@@ -17,7 +17,6 @@ img {
     opacity: 40%;
 }
 
-
 .descricao {
      position: absolute;
      top: 4%;
@@ -54,4 +53,95 @@ img {
     width: 350px;
     display: flex;
     justify-content: space-around;
+}
+
+/* para computador */
+@media (min-width: 1000px) {
+    
+    
+    .img-box {
+        width: 300px;
+        position: absolute;
+        top: 10%;
+    }
+    
+    img {
+        width: 300px;
+        opacity: 100%;
+    }
+    
+    .descricao {
+       position: absolute;
+        top: 45%;
+        width: 280px;
+        color: #fff;
+        left: 37%;
+    }
+    
+    .descricao p {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    
+    .descricao i {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .progresso-bar {
+        width: 280px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: 57%;
+    }
+    
+    progress {
+        width: 0;
+    }
+    
+    .ponto {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    
+    .tempo {
+        position: relative;
+        color: #fff;
+        display: flex;
+        width: 280px;
+        justify-content: space-between;
+        font-size: 20px;
+        top: 59vh;
+        left: 1%;
+    }
+    
+    
+    .player {
+        position: absolute;
+        top: 80%;
+        width: 280px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .botao-play , .botao-pause {
+        font-size: 50px;
+        cursor: pointer;
+    }
+    
+    .player .botao-pause {
+        display: none;
+    }
+    
+    .botao-proxima , .botao-anterior {
+        font-size: 45px;
+        cursor: pointer;
+    }
+
 }
